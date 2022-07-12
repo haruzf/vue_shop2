@@ -1,7 +1,10 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+// 导入全体样式表
 import '@/assets/css/global.css'
+// 导入字体图标
+import '@/assets/fonts/iconfont.css'
 
 // 手动配置element-ui
 import ElementUI from 'element-ui'

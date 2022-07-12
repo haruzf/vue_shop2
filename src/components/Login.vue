@@ -7,6 +7,7 @@
       </div>
       <!-- 登录区域 -->
       <el-form
+        ref="loginFormRef"
         :model="loginForm"
         :rules="loginFormRules"
         label-width="0px"
@@ -30,7 +31,7 @@
         <!-- 按钮区域 -->
         <el-form-item class="btns">
           <el-button type="primary">登录</el-button>
-          <el-button type="info">重置</el-button>
+          <el-button type="info" @click="resetLoginForm">重置</el-button>
         </el-form-item>
       </el-form>
     </div>
@@ -67,6 +68,11 @@ export default {
         ],
       },
     };
+  },
+  methods: {
+    resetLoginForm() {
+      this.$refs.loginFormRef.resetFields();
+    },
   },
   // created () {},
   // // mounted () {},

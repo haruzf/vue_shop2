@@ -14,15 +14,17 @@ Vue.prototype.$http = axios
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 
-import { Button, Form, FormItem, Input, Message } from 'element-ui';
-// import { Form, FormItem } from 'element-ui';
-// import { Input } from 'element-ui';
+import { Button, Form, FormItem, Input, Message, Container, Header, Aside, Main } from 'element-ui';
 
 Vue.use(ElementUI)
 Vue.use(Button)
 Vue.use(Form)
 Vue.use(FormItem)
 Vue.use(Input)
+Vue.use(Container)
+Vue.use(Header)
+Vue.use(Aside)
+Vue.use(Main)
 Vue.prototype.$message = Message
 
 Vue.config.productionTip = false
